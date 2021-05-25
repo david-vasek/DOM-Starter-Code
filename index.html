@@ -7,10 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM Starter Kit</title>
     <link rel="stylesheet" href="css/index.css" />
+    <style>
+        label {
+            display: block;
+            margin: 16px 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-
+    <main>
+        <div class="wrapper">
+            <section>
+                <h1>MadLibs</h1>
+                <form id="generateMadLib" action="#" method="POST">
+                    <fieldset>
+                        <label> Your Name
+                            <input type="text" name="myNameInput" id="myNameInput" placeholder="What is your name?" />
+                        </label>
+                        <button type="submit" id="submitButton">Generate</button>
+                        <label> Favorite Candy
+                            <input type="text" name="favoriteCandyInput" id="favoriteCandyInput" placeholder="What is your favorite candy?" />
+                        </label>
+                        <button type="submit1" id="submitButton1">Generate</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="madlib">
+                <p>My name is <span id="myNameInput" class="placeholder"></span> and my favorite candy is <span id="favoriteCandyInput" class="placeholder"></span></p>
+            </section>
+        </div>      
+    </main>
 </body>
 <script src="js/index.js"></script>
 </html>
